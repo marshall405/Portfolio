@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html {
+	font-family: 'Montserrat', sans-serif;
+	color: #363838;
+}
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 3px;
+}
+
+/*						Header 						*/
+ {
+	border: 1px solid black;
+}
+
+#header h1, #header h2 , #header p{
+	margin: 0px;
+}
+#header p {
+	text-align: right;
+}
+
+
+/*							Objective						*/
+
+#objective {
+	max-width: 300px;
+
+}
+#objective p {
+	font-style: italic;
+}
+
+/*						Skills							*/
+
+	
+
+.skillBar {
+	width: 75%;
+	height: 10px;
+	border: 1px solid #aeb2b2;
+	margin: 0px;
+	border-radius: 5px;
+}
+#skills h4 {
+	margin: 0px;
+}
+#skills p {
+	width: 75%;
+	text-align: right;
+	margin: 0px;
+}
+
+#innerJSBar, #innerHTMLBar, #innerCSSBar {
+		height: 100%;
+		background-color: #f4cb42;
+		border-radius: 5px;
+	}
+#innerJSBar {
+	width: 62%;
+}
+#innerHTMLBar {
+	width: 85%;
+}
+#innerCSSBar {
+	width: 75%;
+}
+
+/*						Work 							*/
+
+.work, .education {
+	padding: 5px;
+}
+.work p, .work h3 {
+	margin: 0px;
+}
+
+/*						Education 						*/
+
+.education h3 {
+	margin: 0px;
+	text-decoration: underline;
+}
+
+
+
+/*						Print							*/
+
+@media print {
+	html {
+		color: black;
+	}
+}
+@media only screen and (min-width: 650px) {
+	#objective {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
