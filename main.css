@@ -69,10 +69,51 @@ body {
 /* to add a new skill, add id to the following line, then make a 
 		specific width like below  */
 #innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
-		height: 100%;
-		background-color: #f4cb42;
-		border-radius: 5px;
-	}
+	height: 100%;
+	background-color: #f4cb42;
+	border-radius: 5px;
+}
+
+#jsSkill {
+	display: none;
+	font-size: 10px;
+}
+#innerJSBar:hover + #jsSkill {
+	display: inline-block;
+	position: relative;
+	left: 52%;
+	top: -16px;
+}
+#htmlSkill {
+	display: none;
+	font-size: 10px;
+}
+#innerHTMLBar:hover + #htmlSkill {
+	display: inline-block;
+	position: relative;
+	left: 85%;
+	top: -16px;
+}
+#cssSkill {
+	display: none;
+	font-size: 10px;
+}
+#innerCSSBar:hover + #cssSkill {
+	display: inline-block;
+	position: relative;
+	left: 75%;
+	top: -16px;
+}
+#clSkill {
+	display: none;
+	font-size: 10px;
+}
+#innerCLBar:hover + #clSkill {
+	display: inline-block;
+	position: relative;
+	left: 65%;
+	top: -16px;
+}
 /*#innerJSBar {
 	width: 62%;
 }
@@ -179,6 +220,33 @@ footer p {
 	#innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
 		background-color: black;
 	}
+	#clSkill {
+		display: inline-block;
+		position: relative;
+		left: 65%;
+		top: -16px;
+	}
+	#jsSkill {
+		display: inline-block;
+		position: relative;
+		left: 52%;
+		top: -16px;
+	}
+	#htmlSkill {
+		display: inline-block;
+		position: relative;
+		left: 85%;
+		top: -16px;
+	}
+	#cssSkill {
+		display: inline-block;
+		position: relative;
+		left: 75%;
+		top: -16px;
+	}
+
+
+
 }
 @media only screen and (min-width: 650px) {
 	#objective {
