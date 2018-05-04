@@ -51,8 +51,9 @@ body {
 	text-align: right;
 	margin: 0px;
 }
-
-#innerJSBar, #innerHTMLBar, #innerCSSBar {
+/* to add a new skill, add id to the following line, then make a 
+		specific width like below  */
+#innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
 		height: 100%;
 		background-color: #f4cb42;
 		border-radius: 5px;
@@ -66,6 +67,14 @@ body {
 #innerCSSBar {
 	width: 75%;
 }
+#innerCLBar {
+	width: 65%;
+}
+/*		Add new skill here		*/
+/* #nameOfNewSkill {
+	width: percentage here;
+}
+*/
 
 /*						Work 							*/
 

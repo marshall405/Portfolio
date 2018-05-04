@@ -41,6 +41,19 @@ window.onload = function() {
 			increment += increase;
 		}, time);
 	})();
+	//command line bar
+	(function() {
+		let innerCLBar = document.getElementById("innerCLBar");
+		innerCLBar.style.width = "0";
+		var increment = 0;
+		let timer = setInterval(function(){
+			if(increment >= 65) {
+				clearInterval(timer);
+			};
+			innerCLBar.style.width = increment + "%";
+			increment += increase;
+		}, time);
+	})();
 
 
 
