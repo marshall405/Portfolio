@@ -5,6 +5,7 @@ html {
 }
 body {
 	max-width: 900px;
+	min-width: 350px;
 	margin: 0 auto;
 	padding: 3px;
 }
@@ -25,26 +26,29 @@ body {
 /*							Objective						*/
 
 #objective {
-	max-width: 300px;
-	margin: 0 auto;
 	text-align: center;
 }
 #objective p {
+	text-align: center;
+	width: 90%;
+	max-width: 450px;
+	margin: 0px auto 5px auto;
 	font-style: italic;
 }
 #profile {
-	width: 80%;
-	height: 200px;
+	width: 90%;
+	max-width: 350px;
+	height: 300px;
 	border-radius: 10px;
 	overflow: hidden;
 	margin: 0 auto;
 	opacity: .75;
 }
- #profile img {
+ #profilePic {
  	width: 100%;
- 	margin: 0px auto;
  	height: 100%;
  }
+
 /*						Skills							*/
 
 #skills h2 {
@@ -66,8 +70,7 @@ body {
 	text-align: right;
 	margin: 0px;
 }
-/* to add a new skill, add id to the following line, then make a 
-		specific width like below  */
+/* to add a new skill, add id to the following line, then add to js file */
 #innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
 	height: 100%;
 	background-color: #f4cb42;
@@ -114,23 +117,6 @@ body {
 	left: 65%;
 	top: -16px;
 }
-/*#innerJSBar {
-	width: 62%;
-}
-#innerHTMLBar {
-	width: 85%;
-}
-#innerCSSBar {
-	width: 75%;
-}
-#innerCLBar {
-	width: 65%;
-}*/
-/*		Add new skill here		*/
-/* #nameOfNewSkill {
-	width: percentage here;
-}
-*/
 
 /*						Work 							*/
 
@@ -248,11 +234,19 @@ footer p {
 
 
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 550px) {
 	#objective {
 		max-width: 100%;
 		display: flex;
+		align-items: center;
 		text-align: left;
+	}
+	#objective p {
+		padding: 5px;
+	}
+	#profile {
+		min-width: 80px;
+		max-height: 60%;
 	}
 		
 }
