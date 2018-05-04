@@ -133,7 +133,22 @@ body {
 	color: #2587bc;
 }
 
+/*					Footer				*/
 
+#github img {
+	width: 50px;
+}
+
+footer {
+	width: 100%;
+}
+footer p {
+	opacity: .3;
+	text-align: center;
+}
+#icons {
+	text-align: center;
+}
 
 
 /*						Print							*/
@@ -157,6 +172,12 @@ body {
 	}
 	hr {
 		margin: 5px;
+	}
+	footer {
+		display: none;
+	}
+	#innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
+		background-color: black;
 	}
 }
 @media only screen and (min-width: 650px) {
