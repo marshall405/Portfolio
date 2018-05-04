@@ -26,15 +26,30 @@ body {
 
 #objective {
 	max-width: 300px;
-
+	margin: 0 auto;
+	text-align: center;
 }
 #objective p {
 	font-style: italic;
 }
-
+#profile {
+	width: 80%;
+	height: 200px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0 auto;
+	opacity: .75;
+}
+ img {
+ 	width: 100%;
+ 	margin: 0px auto;
+ 	height: 100%;
+ }
 /*						Skills							*/
 
-	
+#skills h2 {
+	margin: 15px 0 0 0;
+}
 
 .skillBar {
 	width: 75%;
@@ -78,6 +93,12 @@ body {
 
 /*						Work 							*/
 
+#workExperience {
+}
+#workExperience h2 {
+	margin: 15px 0 0 0;
+}
+
 .work, .education {
 	padding: 5px;
 }
@@ -87,23 +108,62 @@ body {
 
 /*						Education 						*/
 
+#education h2 {
+	margin: 15px 0 0 0;
+}
 .education h3 {
 	margin: 0px;
 	text-decoration: underline;
 }
+
+.education li {
+	margin-top: 10px;
+}
+
+#codeskills {
+	width: 100%;
+	
+	display: flex;
+}
+
+#completion ul {
+	list-style: none;
+}
+#completion ul li {
+	color: #2587bc;
+}
+
 
 
 
 /*						Print							*/
 
 @media print {
-	html {
+	html, #completion ul li {
 		color: black;
+	}
+	#profile {
+		display: none;
+	}
+	#objective {
+		max-width: 100%;
+	}
+	#workExperience h2, #education h2, #skills h2 {
+		font-size: 18px;
+		margin: 5px 0 0 0;
+	}
+	#workExperience ul {
+		margin-bottom: 5px;
+	}
+	hr {
+		margin: 5px;
 	}
 }
 @media only screen and (min-width: 650px) {
 	#objective {
-		max-width: 400px;
-		margin: 0 auto;
+		max-width: 100%;
+		display: flex;
+		text-align: left;
 	}
+		
 }
