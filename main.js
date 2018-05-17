@@ -2,13 +2,22 @@ window.onload = function() {
 	//settings
 	const increase = .5;
 	const time = 10;
+	const skills = {
+		html: 85,
+		css: 75,
+		javascript: 52,
+		commandline: 65
+	};
+	function getID(element) {
+		return document.getElementById(element);
+	}
 	//javascript bar
 	(function() {
-		let innerJSBar = document.getElementById("innerJSBar");
+		let innerJSBar = getID("innerJSBar");
 		innerJSBar.style.width = "0";
-		var increment = 0;
+		let increment = 0;
 		let timer = setInterval(function() {
-			if(increment >= 52) {
+			if(increment >= skills.javascript) {
 				clearInterval(timer);
 			};
 			innerJSBar.style.width = increment + "%";
@@ -17,11 +26,11 @@ window.onload = function() {
 	})();
 	//html bar
 	(function() {
-		let innerHTMLBar = document.getElementById("innerHTMLBar");
+		let innerHTMLBar = getID("innerHTMLBar");
 		innerHTMLBar.style.width = "0";
-		var increment = 0;
+		let increment = 0;
 		let timer = setInterval(function() {
-			if(increment >= 85) {
+			if(increment >= skills.html) {
 				clearInterval(timer);
 			};
 			innerHTMLBar.style.width = increment + "%";
@@ -30,11 +39,11 @@ window.onload = function() {
 	})();
 	//css bar
 	(function() {
-		let innerCSSBar = document.getElementById("innerCSSBar");
+		let innerCSSBar = getID("innerCSSBar");
 		innerCSSBar.style.width = "0";
-		var increment = 0;
+		let increment = 0;
 		let timer = setInterval(function(){
-			if(increment >= 75) {
+			if(increment >= skills.css) {
 				clearInterval(timer);
 			};
 			innerCSSBar.style.width = increment + "%";
@@ -43,11 +52,11 @@ window.onload = function() {
 	})();
 	//command line bar
 	(function() {
-		let innerCLBar = document.getElementById("innerCLBar");
+		let innerCLBar = getID("innerCLBar");
 		innerCLBar.style.width = "0";
-		var increment = 0;
+		let increment = 0;
 		let timer = setInterval(function(){
-			if(increment >= 65) {
+			if(increment >= skills.commandline) {
 				clearInterval(timer);
 			};
 			innerCLBar.style.width = increment + "%";
@@ -55,10 +64,15 @@ window.onload = function() {
 		}, time);
 	})();
 
+	// Set CSS for skill bars
+	// #htmlSkill, #cssSkill, #clSkill, #jsSkill
+	{
+		let htmlSkill = document.getElementById('htmlSkill');
+		let cssSkill = document.getElementById('cssSkill');
+		let clSkill = document.getElementById('clSkill');
+		let jsSkill = document.getElementById('jsSkill');
 
 
-
-
-
+	}
 
 };

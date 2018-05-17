@@ -76,20 +76,26 @@ body {
 	background-color: #f4cb42;
 	border-radius: 5px;
 }
-
-#jsSkill {
+/*#htmlSkill, #cssSkill, #clSkill, #jsSkill*/
+.skillBar div:last-child {
 	display: none;
 	font-size: 10px;
 }
-#innerJSBar:hover + #jsSkill {
+
+.skillBar div:first-child:hover + #jsSkill,
+.skillBar div:first-child:hover + #htmlSkill,
+.skillBar div:first-child:hover + #cssSkill,
+.skillBar div:first-child:hover + #clSkill {
+	display: inline-block;
+	position: relative;
+	top: -16px;
+}
+/*
+#innerJSBar:hover + div {
 	display: inline-block;
 	position: relative;
 	left: 52%;
 	top: -16px;
-}
-#htmlSkill {
-	display: none;
-	font-size: 10px;
 }
 #innerHTMLBar:hover + #htmlSkill {
 	display: inline-block;
@@ -97,19 +103,11 @@ body {
 	left: 85%;
 	top: -16px;
 }
-#cssSkill {
-	display: none;
-	font-size: 10px;
-}
 #innerCSSBar:hover + #cssSkill {
 	display: inline-block;
 	position: relative;
 	left: 75%;
 	top: -16px;
-}
-#clSkill {
-	display: none;
-	font-size: 10px;
 }
 #innerCLBar:hover + #clSkill {
 	display: inline-block;
@@ -117,7 +115,7 @@ body {
 	left: 65%;
 	top: -16px;
 }
-
+*/
 /*						Work 							*/
 
 #workExperience {
