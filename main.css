@@ -1,3 +1,4 @@
+/* version 2 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 html {
 	font-family: 'Montserrat', sans-serif;
@@ -42,35 +43,24 @@ body {
 	font-style: italic;
 }
 #profile {
+	text-align: center;
 	width: 90%;
-	max-width: 350px;
 	height: 300px;
+	min-height: 150px;
 	border-radius: 10px;
 	overflow: hidden;
 	margin: 0 auto;
-	opacity: .75;
-}
-img {
-	border-radius: 10px;
+	opacity: .65;
 }
  #profilePic {
- 	width: 100%;
+ 	max-width: 256px;
  	height: 100%;
-
+ 	border-radius: 100px;
  }
 
 /*						Skills							*/
 #skills h2 {
 	margin: 15px 0 0 0;
-}
-
-.skillBar {
-	width: 75%;
-	height: 10px;
-	border: 1px solid #aeb2b2;
-	margin: 0px;
-	border-radius: 15px;
-	background-color: rgba(255,255,255,10%); 
 }
 #skills h4 {
 	margin: 0px;
@@ -78,22 +68,37 @@ img {
 #skills p {
 	width: 75%;
 	text-align: right;
-	margin: 0px;
+	margin: 0px ;
 }
-/* to add a new skill, add id to the following line, then add to js file */
-#innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
+.skillBar {
+	width: 75%;
+	height: 10px;
+	border: 1px solid #aeb2b2;
+	margin: 0px;
+	border-radius: 15px;
+	background-color: rgba(255,255,255,10%);
+	box-shadow: 0 0 2px 1px #aeb2b2 inset; 
+}
+.skillBar div:last-child {
+	font-size: 10px;
+}
+.barSkill {
 	height: 100%;
 	background-color: #f4cb42;
 	border-radius: 5px;
-
+	box-shadow: 0 0 2px 1px #aeb2b2 inset;
 }
-/*#htmlSkill, #cssSkill, #clSkill, #jsSkill*/
-.skillBar div:last-child {
+.hideSkillRating {
 	display: none;
-	font-size: 10px;
+}
+.showSkillRating {
+	display: inline-block;
+	position: relative;
+	top: -16px;
 }
 
-.skillBar div:first-child:hover + #jsSkill,
+
+/*.skillBar div:first-child:hover + #jsSkill,
 .skillBar div:first-child:hover + #htmlSkill,
 .skillBar div:first-child:hover + #cssSkill,
 .skillBar div:first-child:hover + #clSkill {
@@ -191,10 +196,10 @@ footer p {
 	footer {
 		display: none;
 	}
-	#innerJSBar, #innerHTMLBar, #innerCSSBar, #innerCLBar {
+	.barSkill {
 		background-color: black;
 	}
-	#clSkill, #jsSkill, #htmlSkill, #cssSkill {
+	.hideSkillRating {
 		display: inline-block;
 		position: relative;
 		top: -16px;
@@ -206,7 +211,9 @@ footer p {
 	 	padding: 3px;
 	 	background-image: none;
  	}
-
+.skillBar, .barSkill {
+	box-shadow: none;
+}
 
 }
 @media only screen and (min-width: 550px) {
@@ -214,17 +221,11 @@ footer p {
 		max-width: 100%;
 		display: flex;
 		align-items: center;
-		text-align: left;
 	}
 	#objective p {
 		margin: 0 5px;
 	}
-	#profile {
-		margin: 0 5px 0 0;
-		min-width: 80px;
-		max-height: 60%;
-		
-	}
+
 	
 		
 }
