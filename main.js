@@ -69,7 +69,7 @@ window.onload = function() {
 		skillBarDiv.setAttribute('class', 'barSkill');
 
 		growSkillBar(skill, skillBarDiv);
-		skillRating.style.left = skill.rating + '%';
+		skillRating.style.left = (skill.rating - 3) + '%';
 		skillBarDiv.addEventListener('mouseover', function(){
 			skillRating.setAttribute('class', 'showSkillRating');
 		});

@@ -79,7 +79,7 @@ body {
 	box-shadow: 0 0 2px 1px #aeb2b2 inset; 
 }
 .skillBar div:last-child {
-	font-size: 10px;
+	font-size: 14px;
 }
 .barSkill {
 	height: 100%;
@@ -91,9 +91,14 @@ body {
 	display: none;
 }
 .showSkillRating {
+	border: 1px solid #2355a0;
+	color: #2355a0;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: rgba(255,255,255, .7);
 	display: inline-block;
 	position: relative;
-	top: -16px;
+	top: -20px;
 }
 
 
