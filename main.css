@@ -224,9 +224,12 @@ footer p {
 	 	padding: 3px;
 	 	background-image: none;
  	}
-.skillBar, .barSkill {
-	box-shadow: none;
-}
+ 	.skillBar {
+ 		height: 10px;
+ 	}
+	.skillBar, .barSkill {
+		box-shadow: none;
+	}
 
 }
 @media only screen and (min-width: 550px) {

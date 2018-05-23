@@ -15,7 +15,7 @@ window.onload = function() {
 			level: 'Advanced'
 		},
 		javascript: {
-			rating: 52,
+			rating: 62,
 			name: 'JavaScript',
 			level: 'Intermediate'
 		},
