@@ -258,5 +258,12 @@ footer p {
 	p {
 		font-size: 12px;
 	}
+	.skillBar {
+		height: 10px;
+	}
+	.showSkillRating {
+		font-size: 8px;
+		top: -17px;
+	}
 
 }

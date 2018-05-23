@@ -92,4 +92,38 @@ window.onload = function() {
 			increment += increase;
 		}, time);
 	}
+
+
+
+
+	// Education Completion
+	{
+		let li = document.querySelectorAll('#completion ul li');
+		li.forEach(function(item) {
+			countUp(item);
+		});
+		function countUp(item) {
+			let count = 0;
+			let interval = setInterval(function() {
+				if(count >= 100){
+					clearInterval(interval);
+				}
+				item.innerHTML = count + '%';
+				count += 2;
+			}, 30);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
