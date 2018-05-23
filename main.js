@@ -128,7 +128,7 @@ window.onload = function() {
 			objective.innerHTML += array[count];
 			count++;
 		}
-		}, 50);
+		}, 40);
 		
 	}
 
