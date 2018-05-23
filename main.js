@@ -96,7 +96,7 @@ window.onload = function() {
 
 
 
-	// Education Completion
+	// Education Completion Count Up to 100%
 	{
 		let li = document.querySelectorAll('#completion ul li');
 		li.forEach(function(item) {
@@ -114,7 +114,23 @@ window.onload = function() {
 		}
 	}
 
+	// Objective type animation
 
+	{
+		let objective = document.getElementById('brief');
+		let array = objective.textContent.split('');
+		objective.innerHTML = "";
+		let count = 0;
+		let interval = setInterval(function() {
+			if(count > array.length - 1){
+				clearInterval(interval);
+			} else {
+			objective.innerHTML += array[count];
+			count++;
+		}
+		}, 50);
+		
+	}
 
 
 
