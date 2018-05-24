@@ -49,7 +49,7 @@ window.onload = function() {
 		let h4 			= 	createElement('h4');
 		let innerDiv 	= 	createElement('div');
 		let skillBarDiv = 	createElement('div');
-		let skillRating = 	createElement('div');
+		let skillRating = 	createElement('p');
 		let skillLevel 	=	createElement('p');
 
 		mainDiv.appendChild(outerDiv);
@@ -59,37 +59,38 @@ window.onload = function() {
 		outerDiv.appendChild(skillLevel);
 
 		innerDiv.appendChild(skillBarDiv);
-		innerDiv.appendChild(skillRating);
+		skillBarDiv.appendChild(skillRating);
 
 		h4.innerHTML = skill.name;
 		skillLevel.innerHTML = skill.level;
 		skillRating.innerHTML = skill.rating + '%';
-		skillRating.setAttribute('class', 'hideSkillRating');
+		// skillRating.setAttribute('class', 'hideSkillRating');
 
 		innerDiv.setAttribute('class', 'skillBar');
 		skillBarDiv.setAttribute('class', 'barSkill');
 
-		growSkillBar(skill, skillBarDiv);
-		skillRating.style.left = (skill.rating) + '%';
-		skillBarDiv.addEventListener('mouseover', function(){
-			skillRating.setAttribute('class', 'showSkillRating');
-		});
-		skillBarDiv.addEventListener('mouseleave', function() {
-			skillRating.setAttribute('class', 'hideSkillRating');
-		});
+		growSkillBar(skill, skillBarDiv, skillRating);
+		// skillRating.style.left = (skill.rating) + '%';
+		// skillBarDiv.addEventListener('mouseover', function(){
+		// 	skillRating.setAttribute('class', 'showSkillRating');
+		// });
+		// skillBarDiv.addEventListener('mouseleave', function() {
+		// 	skillRating.setAttribute('class', 'hideSkillRating');
+		// });
 	}
 
 
 	function createElement(element){
 		return document.createElement(element);
 	}
-	function growSkillBar(skill, element){
+	function growSkillBar(skill, element, skillRating){
 		let increment = 0;
 		let timer = setInterval(function() {
 			if(increment >= skill.rating) {
 				clearInterval(timer);
 			};
 			element.style.width = increment + "%";
+			skillRating.innerHTML = increment + '%';
 			increment += increase;
 		}, time);
 	}
@@ -142,6 +143,15 @@ window.onload = function() {
 			step += .05;
 		},100);
 	} 	// End Ojective type animation
-
+	{
+		let header = document.getElementById('header');
+		window.addEventListener('scroll', function(){
+			if(window.scrollY > 0){
+				header.style.boxShadow = '1px 0px 10px 1px #2355a0';
+			} else {
+				header.style.boxShadow = 'none';
+			}
+		});
+	}
 
 };

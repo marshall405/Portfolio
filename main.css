@@ -7,14 +7,20 @@ html {
 	background-image: linear-gradient(to bottom, #edeff2, #a2a5aa);
 }
 body {
+	margin: 0 auto;
+	padding: 0px;
+}
+#main {
 	max-width: 900px;
 	min-width: 250px;
 	margin: 0 auto;
 	padding: 20px;
-	
 }
-
+hr{
+	margin: 0;
+}
  /*#363838*/
+
 #objective, #skills, #workExperience, #education {
  	box-shadow: 0px 0px 5px 1px #2355a0 inset;
  	border-radius: 10px;
@@ -23,27 +29,50 @@ body {
  	margin-top: 5px;
  	background: linear-gradient(to right, #ffffff, #e5e5e5);
  }
+#objective, #skills, #workExperience, #education {
+	transition: color 2s;
+}
+#objective:hover, #skills:hover, #workExperience:hover, #education:hover {
+	color: #2355a0;
+	background: linear-gradient(to left, #ffffff, #e5e5e5);
+}
 
 .flex-container {
 	display: flex;
 }
+
 /*						Header 						*/
-#header h1, #header h2 , #header p{
-	margin: 0px;
+#header {
+	z-index: 1;
+	width: calc(100% - 20px);
+	height: 120px;
+	position: fixed;
+	padding: 10px;
+	margin: 0;
+	background: linear-gradient(to right, #ffffff, #e5e5e5);
+	/*box-shadow: 1px 0px 10px 1px #2355a0;*/
+}
+#header h1 {
+	margin: 5px;
+	letter-spacing: 2px;
 }
 #header p {
 	text-align: right;
 }
+
 #header h1, #main h2 {
 	color: #2355a0;
 }
-
+.spacer {
+	height: 140px;
+	margin: 0;
+	padding: 0;
+}
 
 /*							Objective						*/
 
 #objective {
 	text-align: center;
-	
 }
 #brief {
 	opacity: .0;
@@ -59,21 +88,13 @@ body {
 #profile {
 	margin: 0 auto;
 	opacity: .85;
-	overflow: hidden;
-
 }
  #profilePic {
  	width: 100px;
  	height: 100px;
  	border-radius: 30%;
- 	/*max-width: 256px;*/
- 	/*height: 100%;*/
- 	transition: width 2s, height 2s;
  }
-#profilePic:hover {
-	width: 150px;
-	height: 150px;
-}
+
 
 /*						Skills							*/
 #skills h2 {
@@ -83,9 +104,8 @@ body {
 	margin: 0px;
 }
 #skills p {
-	width: 100%;
 	text-align: right;
-	margin: 0px ;
+	margin: 0;
 }
 .skillBar {
 	width: 100%;
@@ -97,7 +117,7 @@ body {
 	box-shadow: 0 0 2px 1px #aeb2b2 inset; 
 }
 .skillBar div:last-child {
-	
+	text-align: right;
 }
 .barSkill {
 	/*#f4cb42*/
@@ -105,13 +125,21 @@ body {
 	background-color: #f4cb42;
 	border-radius: 10px;
 	box-shadow: 0 0 2px 1px #aeb2b2 inset;
+	text-align: center;
+}
+.barSkill p {	
+	height: 100%;
+	text-align: center !important;
+	color: #2355a0;
+	margin: 0;
+	font-size: 16px;
 }
 .hideSkillRating {
 	display: none;
 }
 .showSkillRating {
 	/*border: 1px solid #2355a0;*/
-	color: #2355a0;
+	
 	font-size: 12px;
 	/*border-radius: 10px;*/
 	height: 16px;
@@ -233,6 +261,10 @@ footer p {
 	.barSkill {
 		background-color: black;
 	}
+	.barSkill p {
+		color: #FFF;
+		font-size: 8px;
+	}
 	.hideSkillRating {
 		display: inline-block;
 		position: relative;
@@ -259,6 +291,7 @@ footer p {
 		display: flex;
 		align-items: center;
 	}
+	
 	#message {
 		margin: 0 auto;
 		width: 70%;
@@ -266,17 +299,29 @@ footer p {
 	#profilePic {
 		width: 150px;
 		height: 150px;
-		transition: width 2s, height 2s;
-	}
-	#profilePic:hover {
-		width: 250px;
-		height: 250px;
 	}
 	#profile {
 		width: 30%;
 		border-radius: 50%;
 		overflow: hidden;
 	}
+}
+@media only screen and (min-width: 680px) {
+	#header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#header h1 {
+		letter-spacing: 2px;
+		font-size: 44px;
+	}
+	#contactInfo {
+		
+	}
+
+
+
 }
 @media only screen and (max-width: 330px){
 	h3 {
@@ -290,19 +335,18 @@ footer p {
 	}
 	h2 {
 		font-size: 18px;
+		margin: 0;
 	}
 	p {
-		font-size: 12px;
+		font-size: 8px;
+		margin: 0;
+	}
+	.barSkill p {
+		font-size: 8px;
 	}
 	.skillBar {
 		height: 10px;
 	}
-	.showSkillRating {
-		font-size: 8px;
-		top: -17px;
-	}
-
-
 }
 
 
@@ -325,32 +369,6 @@ footer p {
 	text-align: center;
 }
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
