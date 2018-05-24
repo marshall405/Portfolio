@@ -291,7 +291,6 @@ footer p {
 		display: flex;
 		align-items: center;
 	}
-	
 	#message {
 		margin: 0 auto;
 		width: 70%;
@@ -305,6 +304,7 @@ footer p {
 		border-radius: 50%;
 		overflow: hidden;
 	}
+
 }
 @media only screen and (min-width: 680px) {
 	#header {
@@ -316,12 +316,7 @@ footer p {
 		letter-spacing: 2px;
 		font-size: 44px;
 	}
-	#contactInfo {
-		
-	}
-
-
-
+	
 }
 @media only screen and (max-width: 330px){
 	h3 {
