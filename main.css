@@ -350,8 +350,14 @@ footer p {
 }
 
 @media only screen and (orientation: landscape) {
-	* {
-		color: red;
+	#header h1, #contactInfo p {
+		margin: 0;
+	}
+	#header {
+		height: 65px;
+	}
+	.spacer {
+		height: 85px;
 	}
 }
 
