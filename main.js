@@ -114,23 +114,33 @@ window.onload = function() {
 		}
 	}
 
-	// Objective type animation
-
-	{
-		let objective = document.getElementById('brief');
-		let array = objective.textContent.split('');
-		objective.innerHTML = "";
-		let count = 0;
+	// Typing Hello animation
+	(function sayHello(message) {
+		let hello = document.getElementById('hello');
+		let greeting = message.split('');
+		let counter = 0;
 		let interval = setInterval(function() {
-			if(count > array.length - 1){
+			if(counter >= greeting.length - 1){
 				clearInterval(interval);
-			} else {
-			objective.innerHTML += array[count];
-			count++;
-		}
-		}, 40);
-		
-	}
+				showMessage();
+			}
+			hello.innerHTML += greeting[counter];
+			counter++;
+		}, 150);
+	})('Hello!');
+	
+		// Objective type animation
+	function showMessage(){
+		let objective = document.getElementById('brief');
+		let step = 0;
+		let interval = setInterval(function() {
+			if(step >= 1){
+				clearInterval(interval);
+			}
+			brief.style.opacity = step;
+			step += .05;
+		},100);
+	} 	// End Ojective type animation
 
 
 

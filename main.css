@@ -42,20 +42,25 @@ body {
 	text-align: center;
 	
 }
-#objective p {
+#brief {
+	opacity: .0;
 	text-align: center;
 	width: 90%;
 	max-width: 500px;
 	margin: 5px auto;
 	font-style: italic;
 }
+#hello {
+
+}
 #profile {
 	border-radius: 10px;
 	margin: 0 auto;
-	opacity: .95;
+	opacity: .85;
 }
  #profilePic {
  	width: 100px;
+ 	border-radius: 10px;
  	/*max-width: 256px;*/
  	/*height: 100%;*/
  }
@@ -190,6 +195,9 @@ footer p {
 	body {
 		padding: 0px;
 	}
+	#hello {
+		display: none;
+	}
 	#profile {
 		display: none;
 	}
@@ -241,6 +249,9 @@ footer p {
 	#objective p {
 		margin: 0 auto;
 	}	
+	#profilePic {
+		width: 150px;
+	}
 }
 @media only screen and (max-width: 330px){
 	h3 {
@@ -265,5 +276,6 @@ footer p {
 		font-size: 8px;
 		top: -17px;
 	}
+
 
 }
