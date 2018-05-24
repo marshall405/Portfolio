@@ -4,6 +4,7 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	color: #363838;
 	background-color: #FFF;
+	background-image: linear-gradient(to bottom, #edeff2, #a2a5aa);
 }
 body {
 	max-width: 900px;
@@ -12,6 +13,7 @@ body {
 	padding: 20px;
 	
 }
+
  /*#363838*/
 #objective, #skills, #workExperience, #education {
  	box-shadow: 0px 0px 5px 1px #2355a0 inset;
@@ -19,6 +21,7 @@ body {
  	padding: 15px;
  	background-color: #FFF;
  	margin-top: 5px;
+ 	background: linear-gradient(to right, #ffffff, #e5e5e5);
  }
 
 .flex-container {
@@ -65,7 +68,12 @@ body {
  	border-radius: 30%;
  	/*max-width: 256px;*/
  	/*height: 100%;*/
+ 	transition: width 2s, height 2s;
  }
+#profilePic:hover {
+	width: 150px;
+	height: 150px;
+}
 
 /*						Skills							*/
 #skills h2 {
@@ -174,6 +182,9 @@ h3:first-child {
 #github img {
 	width: 50px;
 }
+#github img:hover {
+	width: 60px;
+}
 
 footer {
 	width: 100%;
@@ -255,6 +266,11 @@ footer p {
 	#profilePic {
 		width: 150px;
 		height: 150px;
+		transition: width 2s, height 2s;
+	}
+	#profilePic:hover {
+		width: 250px;
+		height: 250px;
 	}
 	#profile {
 		width: 30%;
@@ -288,3 +304,53 @@ footer p {
 
 
 }
+
+
+/* Circle loader????	*/
+/*
+.circle {
+	width: 70px;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: blue;
+}
+.innerCircle {
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: #FFF ;
+}
+.innerCircle p {
+	text-align: center;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

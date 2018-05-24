@@ -1,6 +1,7 @@
 // version 2
 window.onload = function() {
 	//settings
+
 	const increase = .5;
 	const time = 10;
 	const skills = {
@@ -10,7 +11,7 @@ window.onload = function() {
 			level: 'Advanced'
 		},
 		css: {
-			rating: 75,
+			rating: 60,
 			name: 'CSS',
 			level: 'Advanced'
 		},
@@ -141,15 +142,6 @@ window.onload = function() {
 			step += .05;
 		},100);
 	} 	// End Ojective type animation
-
-
-
-
-
-
-
-
-
 
 
 };
