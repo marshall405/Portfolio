@@ -349,6 +349,11 @@ footer p {
 	}
 }
 
+@media only screen and (orientation: landscape) {
+	* {
+		color: red;
+	}
+}
 
 /* Circle loader????	*/
 /*
