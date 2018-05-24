@@ -68,7 +68,9 @@ hr{
 	margin: 0;
 	padding: 0;
 }
-
+#contactInfo a {
+	color: #2355a0;
+}
 /*							Objective						*/
 
 #objective {
@@ -232,9 +234,11 @@ footer p {
 	html, #completion ul li {
 		color: black;
 		background-image: none;
+		background-color: #FFF;
 	}
 	body {
 		padding: 0px;
+		background-color: #FFF;
 	}
 	#hello {
 		display: none;
@@ -249,6 +253,18 @@ footer p {
 		font-size: 18px;
 		margin: 5px 0 0 0;
 	}
+	#objective:hover, #skills:hover, #workExperience:hover, #education:hover {
+		color: black;
+		background: none;
+	}
+	#header {
+		background: none;
+		position: relative;
+	}
+	.spacer {
+		display: none;
+	}
+	
 	#workExperience ul {
 		margin-bottom: 5px;
 	}
@@ -276,6 +292,7 @@ footer p {
 	 	border-radius: 10px;
 	 	padding: 3px;
 	 	background-image: none;
+	 	background-color: #FFF: 
  	}
  	.skillBar {
  		height: 10px;
@@ -283,7 +300,6 @@ footer p {
 	.skillBar, .barSkill {
 		box-shadow: none;
 	}
-
 }
 @media only screen and (min-width: 550px) {
 	#objective {
@@ -316,7 +332,7 @@ footer p {
 		letter-spacing: 2px;
 		font-size: 44px;
 	}
-	
+
 }
 @media only screen and (max-width: 330px){
 	h3 {
