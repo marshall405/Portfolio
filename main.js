@@ -148,8 +148,10 @@ window.onload = function() {
 		window.addEventListener('scroll', function(){
 			if(window.scrollY > 0){
 				header.style.boxShadow = '1px 0px 10px 1px #2355a0';
+				header.style.background = 'linear-gradient(to right, #ffffff, #e5e5e5)';
 			} else {
 				header.style.boxShadow = 'none';
+				header.style.background = 'none';
 			}
 		});
 	}
