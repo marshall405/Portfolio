@@ -5,7 +5,6 @@ window.onload = function() {
 	const increase = .5;
 	const time = 10;
 	const mainDiv = document.getElementById('skills');
-	console.log(skills);
 	(function(){
 		for (var skill in skills){
 			buildSkillBar(skills[skill]);
