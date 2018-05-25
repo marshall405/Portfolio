@@ -1,5 +1,6 @@
 /* version 2 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 html {
 	font-family: 'Montserrat', sans-serif;
 	color: #363838;
@@ -282,11 +283,6 @@ footer p {
 		color: #FFF;
 		font-size: 8px;
 	}
-	.hideSkillRating {
-		display: inline-block;
-		position: relative;
-		top: -16px;
-	}
 	
 	#objective, #skills, #workExperience, #education {
 	 	box-shadow: none;
@@ -363,7 +359,7 @@ footer p {
 
 @media only screen and (orientation: landscape) {
 	#header h1, #contactInfo p {
-		margin: 0;
+		/*margin: 0;*/
 	}
 	#header {
 		height: 65px;

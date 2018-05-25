@@ -1,6 +1,7 @@
-// Add new skill to skills object
+// Add new skill to skills object, main.js will do the rest
+// Keep same format as below
 
-let skills = {
+const skills = {
 	html: {
 		rating: 85,
 		name: 'HTML',
@@ -30,5 +31,6 @@ let skills = {
 		rating: 34,
 		name: 'Express',
 		level: 'Intermediate'
-	}	
+	}
 };
+

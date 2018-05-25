@@ -1,7 +1,6 @@
 // version 2
 window.onload = function() {
 	//settings
-
 	const increase = .5;
 	const time = 10;
 	const mainDiv = document.getElementById('skills');
