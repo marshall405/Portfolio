@@ -91,10 +91,9 @@ hr{
 	max-width: 500px;
 	margin: 5px auto;
 	font-style: italic;
+	font-size: 12px;
 }
-#hello {
 
-}
 #profile {
 	margin: 0 auto;
 	opacity: .85;
