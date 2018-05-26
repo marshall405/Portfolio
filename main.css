@@ -15,7 +15,7 @@ body {
 	max-width: 900px;
 	min-width: 250px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 5px 20px;
 }
 hr{
 	margin: 0;
@@ -55,6 +55,7 @@ hr{
 	margin: 0px;
 	letter-spacing: 2px;
 	font-size: 22px;
+	margin-bottom: 5px;
 }
 
 #header p {
