@@ -122,4 +122,13 @@ window.onload = function() {
 		});
 	}
 
+	// Circle Loader
+	{
+		
+	}
+
+
+
+
+
 };

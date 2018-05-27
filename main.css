@@ -53,7 +53,7 @@ hr{
 }
 #header h1 {
 	margin: 0px;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 	font-size: 22px;
 	margin-bottom: 5px;
 }
@@ -92,7 +92,7 @@ hr{
 	max-width: 500px;
 	margin: 5px auto;
 	font-style: italic;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 #profile {
@@ -326,17 +326,12 @@ footer p {
 	}
 
 }
-@media only screen and (min-width: 680px) {
-	/*#header {
+@media only screen and (min-width: 490px) {
+	#header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}*/
-	#header h1 {
-		letter-spacing: 2px;
-		font-size: 44px;
 	}
-
 }
 @media only screen and (min-width: 550px){
 	#header {
@@ -347,8 +342,17 @@ footer p {
 	#header h1 {
 		font-size: 24px;
 	}
-
-
+}
+@media only screen and (min-width: 680px) {
+	/*#header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}*/
+	#header h1 {
+		/*letter-spacing: 2px;*/
+		font-size: 32px;
+	}
 
 }
 @media only screen and (max-width: 400px){
@@ -367,7 +371,10 @@ footer p {
 	}
 	p {
 		font-size: 8px;
-		margin: 0;
+	}
+	#brief {
+		font-size: 12px;
+		margin: 0 auto;
 	}
 	.barSkill p {
 		font-size: 8px;
@@ -380,8 +387,8 @@ footer p {
 
 
 /* Circle loader????	*/
-/*
-.circle {
+
+/*.circle {
 	width: 70px;
 	border: 1px solid black;
 	padding: 10px;
@@ -396,8 +403,8 @@ footer p {
 }
 .innerCircle p {
 	text-align: center;
-}
-*/
+}*/
+
 
 
 
