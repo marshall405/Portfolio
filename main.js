@@ -192,5 +192,15 @@ window.onload = function() {
 			}, 30);
 		}
 	}	// End count up to 100
-	
+
+
+
+
+
+
+
+
+
+
+
 };

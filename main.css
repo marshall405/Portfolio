@@ -7,6 +7,7 @@ html {
 	color: #363838;
 	background-color: #FFF;
 	background-image: linear-gradient(to bottom, #edeff2, #a2a5aa);
+	height: 100%;
 }
 body {
 	margin: 0 auto;
@@ -17,9 +18,11 @@ body {
 	min-width: 250px;
 	margin: 0 auto;
 	padding: 5px 20px;
+	position: relative;
+	top: 80px;
 }
 hr{
-	margin: 0;
+	margin: 10px;
 }
 
 #objective, #skills, #workExperience, #education {
@@ -37,7 +40,6 @@ hr{
 	color: #2355a0;
 	background: linear-gradient(to left, #ffffff, #e5e5e5);
 }
-
 .flex-container {
 	display: flex;
 	align-items: center;
@@ -76,22 +78,14 @@ h3 {
 	font-size: 14px;
 	margin: 0px;
 }
-
 #header h1, #main h2 {
 	color: #2355a0;
-}
-.spacer {
-	height: 45px;
-	margin: 0;
-	padding: 0;
 }
 #contactInfo a {
 	color: #2355a0;
 }
 
-.spacer {
-	height: 90px;
-}
+
 
 /*							Objective						*/
 
@@ -186,25 +180,29 @@ h3 {
 
 
 /*					Footer				*/
-
-#github img {
-	margin: 10px;
-	width: 50px;
+#icons {
+	text-align: center;
 }
-#github img:hover {
-	width: 60px;
+
+#github{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url("github-512.png");
+	background-size: 50px;
+}
+#github:hover {
+	background-image: url("Octocat.png");
 }
 
 footer {
 	width: 100%;
 }
 footer p {
-	opacity: .3;
+	opacity: ;
 	text-align: center;
 }
-#icons {
-	text-align: center;
-}
+
 
 
 /*						Print							*/
