@@ -1,9 +1,14 @@
-// version 2
+// version 1
 window.onload = function() {
 	//settings
 	const increase = .5;
 	const time = 10;
+
 	const mainDiv = document.getElementById('skills');
+	function createElement(element){
+		return document.createElement(element);
+	}
+
 	(function(){
 		for (var skill in skills){
 			buildSkillBar(skills[skill]);
@@ -30,25 +35,12 @@ window.onload = function() {
 		h4.innerHTML = skill.name;
 		skillLevel.innerHTML = skill.level;
 		skillRating.innerHTML = skill.rating + '%';
-		// skillRating.setAttribute('class', 'hideSkillRating');
 
 		innerDiv.setAttribute('class', 'skillBar');
 		skillBarDiv.setAttribute('class', 'barSkill');
-
 		growSkillBar(skill, skillBarDiv, skillRating);
-		// skillRating.style.left = (skill.rating) + '%';
-		// skillBarDiv.addEventListener('mouseover', function(){
-		// 	skillRating.setAttribute('class', 'showSkillRating');
-		// });
-		// skillBarDiv.addEventListener('mouseleave', function() {
-		// 	skillRating.setAttribute('class', 'hideSkillRating');
-		// });
 	}
 
-
-	function createElement(element){
-		return document.createElement(element);
-	}
 	function growSkillBar(skill, element, skillRating){
 		let increment = 0;
 		let timer = setInterval(function() {
@@ -59,27 +51,6 @@ window.onload = function() {
 			skillRating.innerHTML = increment + '%';
 			increment += increase;
 		}, time);
-	}
-
-
-
-
-	// Education Completion Count Up to 100%
-	{
-		let li = document.querySelectorAll('#completion ul li');
-		li.forEach(function(item) {
-			countUp(item);
-		});
-		function countUp(item) {
-			let count = 0;
-			let interval = setInterval(function() {
-				if(count >= 100){
-					clearInterval(interval);
-				}
-				item.innerHTML = count + '%';
-				count += 2;
-			}, 30);
-		}
 	}
 
 	// Typing Hello animation
@@ -94,8 +65,8 @@ window.onload = function() {
 			}
 			hello.innerHTML += greeting[counter];
 			counter++;
-		}, 150);
-	})('Hello!');
+		}, 100);
+	})('Hello, my name is Marshall');
 	
 		// Objective type animation
 	function showMessage(){
@@ -109,7 +80,8 @@ window.onload = function() {
 			step += .05;
 		},100);
 	} 	// End Ojective type animation
-	{
+
+	{	//Add boxShadow to header on scroll
 		let header = document.getElementById('header');
 		window.addEventListener('scroll', function(){
 			if(window.scrollY > 0){
@@ -122,13 +94,103 @@ window.onload = function() {
 		});
 	}
 
-	// Circle Loader
-	{
+	{	// Add Education
+		let educationDiv = document.getElementById('education');
+		education.forEach(function(item) {
+			
+			let nameDiv = createElement('div');
+			let name 	= createElement('h3');
 		
+			educationDiv.appendChild(nameDiv);
+			nameDiv.appendChild(name);
+			nameDiv.setAttribute('class', 'flex-container');
+			name.innerHTML = item.name;
+
+			if(item.courses) {
+				let showCompletion = createElement('h3');
+				showCompletion.innerHTML = 'Completion';
+				nameDiv.appendChild(showCompletion);
+				item.courses.forEach(function(item) {
+					let flexDiv = createElement('div');
+					let courseName = createElement('p');
+					let completion = createElement('p');
+					courseName.innerHTML = item.courseName;
+					completion.innerHTML = item.completion + '%';
+					flexDiv.appendChild(courseName);
+					flexDiv.appendChild(completion);
+					educationDiv.appendChild(flexDiv);
+					flexDiv.setAttribute('class', 'flex-container');
+				});
+			}
+			if(item.degree) {
+				let p = createElement('p');
+				educationDiv.appendChild(p);
+				p.innerHTML = '<b>Degree:</b> ' + item.degree;
+			}
+			if(item.major) {
+				let p = createElement('p');
+				educationDiv.appendChild(p);
+				p.innerHTML = '<b>Major:</b> ' + item.major;
+			}
+			if(item.graduation) {
+				let p = createElement('p');
+				educationDiv.appendChild(p);
+				p.innerHTML = '<b>Graduation:</b> ' + item.graduation;
+			}
+		});
+	} // End Education 
+
+	{	// Add Work
+		let workDiv = document.getElementById('workExperience');
+		work.forEach(function(item) {
+			let newDiv = createElement('div'); //hold each job
+			// add Company name and Dates
+			let companyNameDiv = createElement('div');
+			let companyName = createElement('h3');
+			let dates = createElement('p');
+			companyName.innerHTML = item.name;
+			dates.innerHTML = `${item.startDate} - ${item.endDate}`;
+			newDiv.appendChild(companyNameDiv);
+			companyNameDiv.appendChild(companyName);
+			companyNameDiv.appendChild(dates);
+			companyNameDiv.setAttribute('class', 'flex-container-space-between');
+			// add location and job title
+			let location = createElement('p');
+			let jobTitle = createElement('h4');
+			location.innerHTML = item.location;
+			jobTitle.innerHTML = item.jobTitle;
+			newDiv.appendChild(location);
+			newDiv.appendChild(jobTitle);
+			// add job duties ul
+			let newUL = createElement('ul');
+			item.jobDuties.forEach(function(item){
+				let li = createElement('li');
+				li.innerHTML = item;
+				newUL.appendChild(li);
+			});
+			newDiv.appendChild(newUL);
+			workDiv.appendChild(newDiv);
+		});
+
 	}
-
-
-
-
-
+	
+	{	// Make anything that is 100% a count to 100
+		let oneHundred = document.querySelectorAll('p');
+		oneHundred.forEach(function(item) {
+			if(item.textContent === '100%'){
+				countUp(item);
+			}
+		});
+		function countUp(item) {
+			let count = 0;
+			let interval = setInterval(function() {
+				if(count >= 100){
+					clearInterval(interval);
+				}
+				item.innerHTML = count + '%';
+				count += 2;
+			}, 30);
+		}
+	}	// End count up to 100
+	
 };

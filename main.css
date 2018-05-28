@@ -1,4 +1,5 @@
-/* version 2 */
+/*	Version 2 */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html {
@@ -20,7 +21,6 @@ body {
 hr{
 	margin: 0;
 }
- /*#363838*/
 
 #objective, #skills, #workExperience, #education {
  	box-shadow: 0px 0px 5px 1px #2355a0 inset;
@@ -40,6 +40,19 @@ hr{
 
 .flex-container {
 	display: flex;
+	align-items: center;
+}
+.flex-container-space-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+h2 {
+	margin: 15px 0;
+}
+h3 {
+	margin: 0px;
+	text-decoration: underline;
 }
 
 /*						Header 						*/
@@ -94,7 +107,6 @@ hr{
 	font-style: italic;
 	font-size: 16px;
 }
-
 #profile {
 	margin: 0 auto;
 	opacity: .85;
@@ -107,9 +119,6 @@ hr{
 
 
 /*						Skills							*/
-#skills h2 {
-	margin: 15px 0 0 0;
-}
 #skills h4 {
 	margin: 0px;
 }
@@ -161,59 +170,20 @@ hr{
 }
 
 
-
+/*						Education 						*/
+#education h3:first-child, #education p:first-child {
+	width: 70%;
+}
+#education p {
+	margin: 8px;
+	margin-left: 10px;
+}
 
 /*						Work 							*/
-
-#workExperience {
-}
-#workExperience h2 {
-	margin: 15px 0 0 0;
+#workExperience p, #workExperience h3, #workExperience h4 {
+	margin: 0;
 }
 
-.work, .education {
-	padding: 5px;
-}
-.work p, .work h3 {
-	margin: 0px;
-}
-#topOfWork {
-	display: flex;
-	justify-content: space-between;
-}
-
-
-/*						Education 						*/
-h3:first-child {
-	width: 70%;
-}
-#education h2 {
-	margin: 15px 0 0 0;
-}
-.education h3 {
-	margin: 0px;
-	text-decoration: underline;
-}
-
-.education li {
-	margin-top: 10px;
-}
-
-#codeskills {
-	width: 100%;
-	display: flex;
-}
-
-#completion ul {
-	list-style: none;
-}
-#completion ul li {
-	color: #2355a0;
-	/*color: #2587bc;*/
-}
-#courses {
-	width: 70%;
-}
 
 /*					Footer				*/
 
@@ -384,26 +354,6 @@ footer p {
 	}
 }
 
-
-
-/* Circle loader????	*/
-
-/*.circle {
-	width: 70px;
-	border: 1px solid black;
-	padding: 10px;
-	border-radius: 50%;
-	background-color: blue;
-}
-.innerCircle {
-	border: 1px solid black;
-	border-radius: 50%;
-	padding: 5px;
-	background-color: #FFF ;
-}
-.innerCircle p {
-	text-align: center;
-}*/
 
 
 
