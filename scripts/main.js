@@ -162,4 +162,39 @@ window.onload = function() {
 			}, 30);
 		}
 	}	// End count up to 100
+
+	// {	// Hamburger
+	// 	let burger = document.getElementById('hamburger');
+	// 	let menu = document.getElementById('contactInfo');
+	// 	burger.addEventListener('click', function() {
+	// 		if(menu.style.display === "none"){
+	// 			menu.style.display = "block";
+	// 		} else {
+	// 			menu.style.display = "none";
+	// 		}
+	// 	});
+
+
+
+	// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };

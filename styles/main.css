@@ -74,17 +74,41 @@ h3 {
 	margin-bottom: 5px;
 }
 
-#header p {
-	text-align: right;
-	font-size: 14px;
-	margin: 0px;
-}
+
 #header h1, #main h2 {
 	color: #2355a0;
+}
+
+#header h1 {
+	text-align: center;
+}
+
+#contactInfo p {
+	text-align: center;
+	font-size: 14px;
+	margin: 2px 0;
 }
 #contactInfo a {
 	color: #2355a0;
 }
+
+/*							Hamburger						*/
+/*#hamburger {
+	width: 20px;
+	margin: 0 auto;
+	padding: 3px;
+}
+#hamburger:hover {
+	cursor: pointer;
+}
+#hamburger div {
+	width: 20px;
+	height: 3px;
+	background-color: #2355a0;
+	margin: 3px 0;
+}*/
+
+
 
 
 
@@ -307,6 +331,9 @@ footer p {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	#contactInfo p {
+		text-align: right;
 	}
 }
 @media only screen and (min-width: 550px){
