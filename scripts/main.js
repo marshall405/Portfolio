@@ -178,7 +178,17 @@ window.onload = function() {
 
 	// }
 
+	{	// Github Icon hover, change img
+		let image = document.getElementById('github');
 
+		image.onmouseenter = function(){
+			image.setAttribute('src', 'pics/Octocat.png');
+		}
+		image.onmouseleave = function() {
+			image.setAttribute('src', 'pics/github-512.png');
+		}
+
+	}
 
 
 
