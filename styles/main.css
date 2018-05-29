@@ -192,7 +192,11 @@ h3 {
 	background-image: url("../pics/github-512.png");
 	background-size: 50px;
 }
+#github a:hover {
+	cursor: pointer;
+}
 #github:hover {
+	cursor: pointer;
 	background-image: url("../pics/Octocat.png");
 }
 
