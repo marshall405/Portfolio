@@ -166,7 +166,7 @@ h3 {
 	width: 70%;
 }
 #education p {
-	margin: 8px;
+	margin: 4px;
 	margin-left: 10px;
 }
 
@@ -213,6 +213,9 @@ footer p {
 	body {
 		padding: 0px;
 		background-color: #FFF;
+	}
+	#main {
+		top: 0;
 	}
 	#hello {
 		display: none;

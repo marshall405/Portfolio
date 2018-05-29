@@ -16,7 +16,7 @@ const work = [
 		name: 'Ditch Witch',
 		location: 'Perry, OK',
 		startDate: 'Nov. 2012',
-		endDate: 'Jan. 2015',
+		endDate: "Jan. 2015",
 		jobTitle: 'Material Handler',
 		jobDuties: [
 			'Received Lean Manufacturing training',

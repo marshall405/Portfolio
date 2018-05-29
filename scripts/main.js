@@ -144,29 +144,17 @@ window.onload = function() {
 		let workDiv = document.getElementById('workExperience');
 		work.forEach(function(item) {
 			let newDiv = createElement('div'); //hold each job
-			// add Company name and Dates
-			let companyNameDiv = createElement('div');
-			let companyName = createElement('h3');
-			let dates = createElement('p');
-			companyName.innerHTML = item.name;
-			dates.innerHTML = `${item.startDate} - ${item.endDate}`;
-			newDiv.appendChild(companyNameDiv);
-			companyNameDiv.appendChild(companyName);
-			companyNameDiv.appendChild(dates);
-			companyNameDiv.setAttribute('class', 'flex-container-space-between');
-			// add location and job title
-			let location = createElement('p');
-			let jobTitle = createElement('h4');
-			location.innerHTML = item.location;
-			jobTitle.innerHTML = item.jobTitle;
-			newDiv.appendChild(location);
-			newDiv.appendChild(jobTitle);
-			// add job duties ul
+			newDiv.innerHTML += `
+				<div class="flex-container-space-between">
+					<h3> ${item.name} </h3>
+					<p> ${item.startDate} - ${item.endDate || 'Current'} </p>
+				</div>
+				<p> ${item.location} </p>
+				<h4> ${item.jobTitle} </h4>`;
 			let newUL = createElement('ul');
 			item.jobDuties.forEach(function(item){
-				let li = createElement('li');
-				li.innerHTML = item;
-				newUL.appendChild(li);
+				newUL.innerHTML += `
+					<li> ${item} </li> `
 			});
 			newDiv.appendChild(newUL);
 			workDiv.appendChild(newDiv);
@@ -192,14 +180,6 @@ window.onload = function() {
 			}, 30);
 		}
 	}	// End count up to 100
-
-
-
-
-
-
-
-
 
 
 
