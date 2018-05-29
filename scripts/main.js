@@ -66,9 +66,10 @@ window.onload = function() {
 			hello.innerHTML += greeting[counter];
 			counter++;
 		}, 100);
-	})('Hello, my name is Marshall');
+	})('Hello!');
 	
-		// Objective type animation
+
+	// Objective slowly appear
 	function showMessage(){
 		let objective = document.getElementById('brief');
 		let step = 0;
@@ -79,7 +80,7 @@ window.onload = function() {
 			brief.style.opacity = step;
 			step += .05;
 		},100);
-	} 	// End Ojective type animation
+	} 	// End Ojective slowly appear
 
 	{	//Add boxShadow to header on scroll
 		let header = document.getElementById('header');
@@ -92,80 +93,61 @@ window.onload = function() {
 				header.style.background = 'none';
 			}
 		});
-	}
+	}	// End boxShadow
 
 	{	// Add Education
 		let educationDiv = document.getElementById('education');
 		education.forEach(function(item) {
-			
-			let nameDiv = createElement('div');
-			let name 	= createElement('h3');
-		
-			educationDiv.appendChild(nameDiv);
-			nameDiv.appendChild(name);
-			nameDiv.setAttribute('class', 'flex-container');
-			name.innerHTML = item.name;
+			educationDiv.innerHTML += `
+				<div class="flex-container">
+					<h3> ${ item.name } </h3>
+					<h3> ${ item.courses ? 'Completion' : "" } </h3>
+				</div>`;
 
 			if(item.courses) {
-				let showCompletion = createElement('h3');
-				showCompletion.innerHTML = 'Completion';
-				nameDiv.appendChild(showCompletion);
-				item.courses.forEach(function(item) {
-					let flexDiv = createElement('div');
-					let courseName = createElement('p');
-					let completion = createElement('p');
-					courseName.innerHTML = item.courseName;
-					completion.innerHTML = item.completion + '%';
-					flexDiv.appendChild(courseName);
-					flexDiv.appendChild(completion);
-					educationDiv.appendChild(flexDiv);
-					flexDiv.setAttribute('class', 'flex-container');
+				item.courses.forEach(function(item){
+					educationDiv.innerHTML += `
+						<div class="flex-container">
+							<p> ${ item.courseName } </p>
+							<p> ${ item.completion }% </p>
+						</div>`
 				});
 			}
 			if(item.degree) {
-				let p = createElement('p');
-				educationDiv.appendChild(p);
-				p.innerHTML = '<b>Degree:</b> ' + item.degree;
+				educationDiv.innerHTML += `<p><b>Degree:</b> ${ item.degree } </p>`;
 			}
 			if(item.major) {
-				let p = createElement('p');
-				educationDiv.appendChild(p);
-				p.innerHTML = '<b>Major:</b> ' + item.major;
+				educationDiv.innerHTML += `<p><b>Major:</b> ${ item.major } </p>`;
 			}
 			if(item.graduation) {
-				let p = createElement('p');
-				educationDiv.appendChild(p);
-				p.innerHTML = '<b>Graduation:</b> ' + item.graduation;
+				educationDiv.innerHTML += `<p><b>Graduation:</b> ${ item.graduation } </p>`;
 			}
-		});
+		 });
 	} // End Education 
 
 	{	// Add Work
 		let workDiv = document.getElementById('workExperience');
 		work.forEach(function(item) {
-			let newDiv = createElement('div'); //hold each job
-			newDiv.innerHTML += `
+			workDiv.innerHTML += `
 				<div class="flex-container-space-between">
-					<h3> ${item.name} </h3>
-					<p> ${item.startDate} - ${item.endDate || 'Current'} </p>
+					<h3> ${ item.name } </h3>
+					<p> ${ item.startDate } - ${ item.endDate || 'Current' } </p>
 				</div>
-				<p> ${item.location} </p>
-				<h4> ${item.jobTitle} </h4>`;
+				<p> ${ item.location } </p>
+				<h4> ${ item.jobTitle } </h4>`;
 			let newUL = createElement('ul');
 			item.jobDuties.forEach(function(item){
 				newUL.innerHTML += `
-					<li> ${item} </li> `
+					<li> ${ item } </li> `
 			});
-			newDiv.appendChild(newUL);
-			workDiv.appendChild(newDiv);
+			workDiv.appendChild(newUL);
 		});
-
-	}
+	}	// End Work
 	
 	{	// Make anything that is 100% a count to 100
 		let oneHundred = document.querySelectorAll('p');
 		oneHundred.forEach(function(item) {
-			if(item.textContent === '100%'){
+			if(item.textContent === ' 100% '){
 				countUp(item);
 			}
 		});
@@ -180,7 +162,4 @@ window.onload = function() {
 			}, 30);
 		}
 	}	// End count up to 100
-
-
-
 };
