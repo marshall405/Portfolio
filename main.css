@@ -5,9 +5,6 @@
 html {
 	font-family: 'Montserrat', sans-serif;
 	color: #363838;
-	background-color: #FFF;
-	background-image: linear-gradient(to bottom, #edeff2, #a2a5aa);
-	height: 100%;
 }
 body {
 	margin: 0 auto;
