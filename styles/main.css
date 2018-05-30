@@ -33,6 +33,7 @@ hr{
  	margin-top: 5px;
  	background: linear-gradient(to right, #ffffff, #e5e5e5);
  }
+ 
  #main > div {
  	transition: color 2s;
  }
