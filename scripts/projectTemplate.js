@@ -1,4 +1,5 @@
 window.onload = function() {
+	// FOR PROJECTS PAGE
 
 	let mainDiv = document.getElementById('main');
 	projects.forEach(function(item) {
@@ -9,34 +10,6 @@ window.onload = function() {
 				<p> ${ item.desc } </p>
 			`
 	});
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -52,13 +25,6 @@ window.onload = function() {
 			}
 		});
 	}	// End boxShadow
-
-
-
-
-
-
-
 
 
 
