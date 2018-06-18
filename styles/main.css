@@ -28,7 +28,7 @@ a{
 	text-decoration: none;
 }
 
-#objective, #skills, #workExperience, #education {
+#objective, #skills, #workExperience, #education, #menu {
  	box-shadow: 0px 0px 5px 1px #2355a0 inset;
  	border-radius: 10px;
  	padding: 15px;
@@ -233,6 +233,16 @@ footer p {
 }
 
 
+
+#menu {
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 0;
+}
+#menu div{
+	padding: 10px;
+}
+
 /*						Print							*/
 
 @media print {
@@ -303,6 +313,9 @@ footer p {
  	}
 	.skillBar, .barSkill {
 		box-shadow: none;
+	}
+	#menu {
+		display: none;
 	}
 }
 @media only screen and (min-width: 550px) {

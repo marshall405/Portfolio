@@ -34,7 +34,6 @@ window.onload = function() {
 			message: 'Marshall Slemp'
 		}
 		let domChildren = document.body.childNodes;
-		console.log(domChildren);
 		
 		domChildren.forEach(function(item) {
 			if(item.textContent.trim() === '{{ message }}'){
