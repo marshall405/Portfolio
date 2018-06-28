@@ -135,11 +135,20 @@ a {
 	opacity: .85;
 }
  #profilePic {
+ 	animation-name: animation-zoom;
+ 	animation-duration: 1s;
  	width: 100px;
  	height: 100px;
  	border-radius: 30%;
  }
-
+@keyframes animation-zoom {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 100px;
+	}
+}
 
 /*						Skills							*/
 #skills h4 {
@@ -358,6 +367,14 @@ footer p {
 	#header h1 {
 		font-size: 24px;
 	}
+	@keyframes animation-zoom {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 150px;
+	}
+}
 }
 @media only screen and (min-width: 680px) {
 	/*#header {
