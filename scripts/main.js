@@ -66,7 +66,7 @@ window.onload = function() {
 			hello.innerHTML += greeting[counter];
 			counter++;
 		}, 100);
-	})('Hello!');
+	})('Hello');
 	
 
 	// Objective slowly appear
