@@ -29,7 +29,7 @@ const education = [
 		],
 		degree: false,
 		major: false,
-		graduation: 'April 2018'
+		graduation: false
 	},
 	{
 		name: 'Oklahoma State University',
