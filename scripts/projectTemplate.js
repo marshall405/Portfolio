@@ -37,7 +37,7 @@ window.onload = function() {
 		
 		domChildren.forEach(function(item) {
 			if(item.textContent.trim() === '{{ message }}'){
-				item.innerHTML = template.message;
+				item.innerHTML = `<h1> ${ template.message } </h1>`;
 			}
 		});
 	}

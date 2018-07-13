@@ -10,6 +10,12 @@ const projects = [
 		url: 'https://htmlpreview.github.io/?https://github.com/marshall405/colorMash/blob/master/index.html',
 		img: 'pics/colorMash.png',
 		desc: 'Combine two colors, or use the gobstopper function to see hundreds of colors.'
+	},
+	{
+		name: 'Sudoku Solver',
+		url: '',
+		img: 'pics/sudoku.png',
+		desc: 'unfinished... :('
 	}
 
 ]
