@@ -16,12 +16,12 @@ window.onload = function() {
 	})();
 
 	function buildSkillBar(skill) {
-		let outerDiv 	= 	createElement('div');
-		let h4 			= 	createElement('h4');
-		let innerDiv 	= 	createElement('div');
-		let skillBarDiv = 	createElement('div');
-		let skillRating = 	createElement('p');
-		let skillLevel 	=	createElement('p');
+		const outerDiv 	= 	createElement('div');
+		const h4 			= 	createElement('h4');
+		const innerDiv 	= 	createElement('div');
+		const skillBarDiv = 	createElement('div');
+		const skillRating = 	createElement('p');
+		const skillLevel 	=	createElement('p');
 
 		mainDiv.appendChild(outerDiv);
 
