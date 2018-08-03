@@ -1,5 +1,12 @@
 const education = [
 	{
+		name: 'Austin Coding Academy',
+		courses: false,
+		degree: false,
+		major: false,
+		graduation: 'Pending'
+	},
+	{
 		name: 'Codecademy',
 		courses: [
 			{
