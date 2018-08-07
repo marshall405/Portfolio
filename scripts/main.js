@@ -163,20 +163,6 @@ window.onload = function() {
 		}
 	}	// End count up to 100
 
-	// {	// Hamburger
-	// 	let burger = document.getElementById('hamburger');
-	// 	let menu = document.getElementById('contactInfo');
-	// 	burger.addEventListener('click', function() {
-	// 		if(menu.style.display === "none"){
-	// 			menu.style.display = "block";
-	// 		} else {
-	// 			menu.style.display = "none";
-	// 		}
-	// 	});
-
-
-
-	// }
 
 	{	// Github Icon hover, change img
 		let image = document.getElementById('github');
