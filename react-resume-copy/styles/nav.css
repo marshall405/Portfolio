@@ -1,0 +1,29 @@
+/*          NAV              */
+/* #2b2b2b dark gray*/
+/* #ededed white */
+.nav {
+    /* width: 330px; */
+    /* transform: rotate(90deg);
+    transform-origin: bottom left;  */
+    box-sizing: border-box;
+    margin: 0px 0px;;
+   
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    position: relative;
+    display: inline-block;
+    margin: 0 0;
+    padding: 4px;   
+}
+li:hover {
+    cursor: pointer;
+}
+.active {
+    background-color:#2b2b2b;
+    color: #ededed;
+}

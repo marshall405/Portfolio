@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+    background-color:  #ededed;
+    color: #2b2b2b;
+    font-family: 'Ubuntu', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/*              CONTAINER            */
+.container {
+    box-sizing: border-box;
+    min-width: 350px;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ededed;
+}
+#root {
+    background-color: #2b2b2b;
+    margin: 0;
+}
+/*              HEADER               */
+.header {
+    padding: 10px;
+}
+
+
+
+
+/*                  HOME                 */
+/*  PICTURE                              */
+#profile {
+    text-align: center;
+}
+#profilePic {
+    animation-name: animation-zoom;
+    animation-duration: 1s;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
+@keyframes animation-zoom {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 200px;
+	}
+}
+#homeDiv {
+    padding: 10px;
+    color: #ededed;
+}
+.greeting {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+
+/*              SKILLS               */
+
+.skillDiv > div{
+    margin: 0px 0px;
+    box-shadow: 0px 0px 0px 1px #2355a0;
+    padding: 10px;
+    font-size: 18px;
+    color: #ededed;
+}
+.skillDiv h4 {
+    text-align: left;
+}
+.skillDiv > div > p {
+    text-align: right;
+}
+
+/* SKILL BAR                           */
+
+.skillBar {
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 5px;
+    border-bottom: 3px solid #2355a0;
+    border-top: 3px solid #2355a0;
+    overflow: hidden;
+}
+.barSkill {
+    margin: 0 0; 
+    background-color: #2355a0;
+    /* border-radius: 10px; */
+    
+}
+.barSkill p {
+   text-align: center;
+   color: #ededed;
+}
+
+/*             EDUCATION             */
+.educationDiv {
+    color: #ededed;
+    font-size: 18px;
+}
+.educationDiv > div {
+    padding: 10px;
+    margin: 0px 0px;
+}
+.educationDiv h5 {
+    text-align: center;
+    
+}
+.educationDiv > div > ul > li {
+    font-size: 12px;
+}
