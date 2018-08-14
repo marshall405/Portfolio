@@ -28,7 +28,7 @@ a{
 	text-decoration: none;
 }
 
-#objective, #skills, #workExperience, #education, #menu {
+#objective, #skills, #workExperience, #education, #menu, #reactDiv {
  	box-shadow: 0px 0px 5px 1px #2355a0 inset;
  	border-radius: 10px;
  	padding: 15px;
@@ -96,21 +96,13 @@ a {
 	color: #2355a0;
 }
 
-/*							Hamburger						*/
-/*#hamburger {
-	width: 20px;
-	margin: 0 auto;
-	padding: 3px;
+/* 		REACT DIV ON HOMEPAGE	 */
+#reactDiv {
+	text-align: center;
 }
-#hamburger:hover {
-	cursor: pointer;
+#reactDiv a {
+	display: block;
 }
-#hamburger div {
-	width: 20px;
-	height: 3px;
-	background-color: #2355a0;
-	margin: 3px 0;
-}*/
 
 
 

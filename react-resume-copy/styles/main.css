@@ -113,3 +113,17 @@ html {
 .educationDiv > div > ul > li {
     font-size: 12px;
 }
+
+
+
+
+/*          GO BACK          */
+#goBack {
+    text-align: center;
+    margin: 144px;
+}
+#goBack a {
+    font-size: 32px;
+    color: #2b2b2b;
+    display: block;
+}
