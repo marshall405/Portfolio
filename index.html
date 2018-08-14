@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="styles/main.css">
 	</head>
 	<body>
+		<div id="root"></div>
 		<div id="header">
 			<h1> Marshall Slemp </h1>
 			<div id="contactInfo">
@@ -50,6 +51,12 @@
 		<script type="text/javascript" src="information/skills.js"></script>
 		<script type="text/javascript" src="information/education.js"></script>
 		<script type="text/javascript" src="information/work.js"></script>
+
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 	</body>
 
 </html>
