@@ -176,6 +176,28 @@ window.onload = function() {
 
 	}
 
+	// {  // POSTS posts.js array
+	// 	const postDiv = document.getElementById('posts');
+	// 	const mainDiv = document.getElementById('main');
+	// 	postDiv.innerHTML = `
+	// 		<div id="postHeading">
+	// 			<h3> ${posts[posts.length - 1].title} </h3>
+	// 			<h6> ${posts[posts.length -1].date} </h6>
+	// 		</div>
+	// 		<p> ${posts[posts.length - 1].post.slice(0, 350)}</p>
+	// 		<div id='showAll'> show more</div>`
+
+
+	// 	const showAll = document.getElementById('showAll');
+	// 	showAll.addEventListener('click', () => {
+	// 		postDiv.innerHTML = `
+	// 		<div id="postHeading">
+	// 			<h3> ${posts[posts.length - 1].title} </h3>
+	// 			<h6> ${posts[posts.length -1].date} </h6>
+	// 		</div>
+	// 		<p> ${posts[posts.length - 1].post}</p>`
+	// 	});
+	// }
 
 	
 	
