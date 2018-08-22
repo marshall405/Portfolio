@@ -4,7 +4,7 @@ const education = [
 		courses: [
 			{
 				courseName:'211.1 JavaScript Full Stack (Intermediate)',
-				completion: 33
+				completion: 50
 			}
 		],
 		degree: false,

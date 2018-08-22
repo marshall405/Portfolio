@@ -28,7 +28,7 @@ a{
 	text-decoration: none;
 }
 
-#objective, #skills, #workExperience, #education, #menu, #reactDiv, #posts {
+#objective, #skills, #projects, #education, #menu, #reactDiv, #posts {
  	box-shadow: 0px 0px 5px 1px #2355a0 inset;
  	border-radius: 10px;
  	padding: 15px;
@@ -221,7 +221,7 @@ a {
 }
 
 /*						Work 							*/
-#workExperience p, #workExperience h3, #workExperience h4 {
+#projects h3, #projects h4 {
 	margin: 0;
 }
  
@@ -337,7 +337,7 @@ footer p {
 		position: static;
 	}
 	
-	#workExperience ul {
+	#projects ul {
 		margin-bottom: 5px;
 	}
 	hr {

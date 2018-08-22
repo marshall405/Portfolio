@@ -6,7 +6,7 @@ h1 {
 
 
 
-#main {
+#projects {
 	min-width: 300px;
 }
 
@@ -18,8 +18,8 @@ h1 {
 	padding: 5px;
 	box-shadow: 0px 0px 5px 1px #2355a0 inset;
  	border-radius: 10px;
- 	background-color: #FFF;
- 	background: linear-gradient(to right, #ffffff, #e5e5e5);
+ 	/* background-color: #FFF;
+ 	background: linear-gradient(to right, #ffffff, #e5e5e5); */
 }
 .projects h2 {
 	margin: 5px;
@@ -40,7 +40,7 @@ h1 {
 
 @media only screen and (min-width: 500px) {
 
-	#main img {
+	#projects img {
 		width: 50%;
 		max-width: 300px;
 		height: 50%;
