@@ -11,11 +11,11 @@ const projects = [
 		img: 'pics/colorMash.png',
 		desc: 'Combine two colors, or use the gobstopper function to see hundreds of colors.'
 	},
-	{
-		name: 'Sudoku Solver',
-		url: '',
-		img: 'pics/sudoku.png',
-		desc: 'unfinished... :('
-	}
+	// {
+	// 	name: 'Sudoku Solver',
+	// 	url: '',
+	// 	img: 'pics/sudoku.png',
+	// 	desc: 'unfinished... :('
+	// }
 
 ]

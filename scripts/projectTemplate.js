@@ -1,7 +1,7 @@
-window.onload = function() {
+function loadProjects() {
 	// FOR PROJECTS PAGE
 
-	let mainDiv = document.getElementById('main');
+	let mainDiv = document.getElementById('projects');
 	projects.forEach(function(item) {
 		mainDiv.innerHTML += `
 			<div class="projects">
@@ -29,17 +29,17 @@ window.onload = function() {
 
 
 
-	{	// Testing (Keep at bottom)
-		const template = {
-			message: 'Marshall Slemp'
-		}
-		let domChildren = document.body.childNodes;
+	// {	// Testing (Keep at bottom)
+	// 	const template = {
+	// 		message: 'Marshall Slemp'
+	// 	}
+	// 	let domChildren = document.body.childNodes;
 		
-		domChildren.forEach(function(item) {
-			if(item.textContent.trim() === '{{ message }}'){
-				item.innerHTML = `<h1> ${ template.message } </h1>`;
-			}
-		});
-	}
+	// 	domChildren.forEach(function(item) {
+	// 		if(item.textContent.trim() === '{{ message }}'){
+	// 			item.innerHTML = `<h1> ${ template.message } </h1>`;
+	// 		}
+	// 	});
+	// }
 }
 

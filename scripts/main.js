@@ -125,24 +125,6 @@ window.onload = function() {
 		 });
 	} // End Education 
 
-	{	// Add Work
-		let workDiv = document.getElementById('workExperience');
-		work.forEach(function(item) {
-			workDiv.innerHTML += `
-				<div class="flex-container-space-between">
-					<h3> ${ item.name } </h3>
-					<p> ${ item.startDate } - ${ item.endDate || 'Current' } </p>
-				</div>
-				<p> ${ item.location } </p>
-				<h4> ${ item.jobTitle } </h4>`;
-			let newUL = createElement('ul');
-			item.jobDuties.forEach(function(item){
-				newUL.innerHTML += `
-					<li> ${ item } </li> `
-			});
-			workDiv.appendChild(newUL);
-		});
-	}	// End Work
 	
 	{	// Make anything that is 100% a count to 100
 		let oneHundred = document.querySelectorAll('p');
@@ -176,44 +158,6 @@ window.onload = function() {
 
 	}
 
-	// {  // POSTS posts.js array
-	// 	const postDiv = document.getElementById('posts');
-	// 	const mainDiv = document.getElementById('main');
-	// 	postDiv.innerHTML = `
-	// 		<div id="postHeading">
-	// 			<h3> ${posts[posts.length - 1].title} </h3>
-	// 			<h6> ${posts[posts.length -1].date} </h6>
-	// 		</div>
-	// 		<p> ${posts[posts.length - 1].post.slice(0, 350)}</p>
-	// 		<div id='showAll'> show more</div>`
-
-
-	// 	const showAll = document.getElementById('showAll');
-	// 	showAll.addEventListener('click', () => {
-	// 		postDiv.innerHTML = `
-	// 		<div id="postHeading">
-	// 			<h3> ${posts[posts.length - 1].title} </h3>
-	// 			<h6> ${posts[posts.length -1].date} </h6>
-	// 		</div>
-	// 		<p> ${posts[posts.length - 1].post}</p>`
-	// 	});
-	// }
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	loadProjects();
 
 };
